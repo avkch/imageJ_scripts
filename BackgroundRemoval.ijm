@@ -17,7 +17,7 @@ bgr_name = File.name;
 run("Invert");
 
 
-// loop trouch the files and substract the background from them
+// loop trough the files and substract the background from them
 for (i=0; i<list.length; i++){
 	if(!matches(list[i], bgr_name) ) { // exclude background image if is in the same directory as the resto of the images
 		if(!endsWith(list[i], "/")) { // exclude directories from the list
